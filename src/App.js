@@ -1,12 +1,10 @@
 import './App.css';
+import Pics from './filmpictures';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"> 
-        <h1>Mike film</h1>
-       
-      </header>
+      <Pics/>
     </div>
   );
 }

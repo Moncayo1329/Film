@@ -3,9 +3,9 @@ export const Filmphotos = [
 {
 
 id:'1',
+Title: 'Me drinking',
 img:require('../data/photos/Mike.jpg'),
-description:"me",
-dates:" younger etiqueta"
+Dates: '2024-12-05',
 
 
 
@@ -15,9 +15,9 @@ dates:" younger etiqueta"
 {
 
     id:'2',
+    Title: 'Me and my bestie',
     img: require('../data/photos/me.jpg'),
-    description:"me and my best friend",
-    dates:" younger etiqueta"
+    Dates:" 12-12-123"
     
     
     
