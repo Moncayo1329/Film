@@ -4,6 +4,7 @@ import Render from "./renderPics";
 
 function Pics() {
 
+   
 return (
 <div className="App">
       <header className="App-header"> 

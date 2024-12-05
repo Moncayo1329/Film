@@ -4,7 +4,7 @@ export const Filmphotos = [
 
 id:'1',
 Title: 'Me drinking',
-img:require('../data/photos/Mike.jpg'),
+img: require('../data/photos/Mike.jpg'),
 Dates: '2024-12-05',
 
 

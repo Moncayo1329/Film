@@ -1,0 +1,11 @@
+/* src/global.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+--grape:rgba(114,35,204);
+
+}
