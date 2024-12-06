@@ -5,7 +5,7 @@
   }
   
   [data-theme="dark"] {
-    --background: #121212;
+    --background: #000000;
     --text-color: #FFFFFF;
   }
 /* Aplicar los estilos usando las variables CSS */
@@ -69,11 +69,11 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #030f18;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #030f18;
 }
 
 input:checked + .slider:before {
