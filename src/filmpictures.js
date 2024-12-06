@@ -8,7 +8,7 @@ function Pics() {
 return (
 <div className="App">
       <header className="App-header"> 
-        <h1>Mike film</h1>
+        <h1 className="text-3xl font-bold underline">Mike film</h1>
         {Filmphotos && Filmphotos.length > 0 ? (
           Filmphotos.map((photo, index) => (
             <Render

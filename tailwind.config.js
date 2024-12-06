@@ -1,12 +1,19 @@
-import { config } from '@testing-library/react'
-
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: [],
+  content: [
+
+"./src/renderPics.js",
+"./public/index.html",
+"./src/App.js",
+"./src/filmpictures.js",
+
+
+  ],
   theme: {
     extend: {
    colors:{
-  grape:"var(--grape)",
+  grape:"rgba(var(--grape), <alpha-value>)",
 
    }
     },
@@ -14,4 +21,3 @@ module.exports = {
   plugins: [],
 }
 
-export default config;

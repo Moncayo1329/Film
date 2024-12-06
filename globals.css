@@ -1,0 +1,6 @@
+:root {
+    --grape: 114, 35, 204;
+  }
+  @import "tailwindcss/base";
+  @import "tailwindcss/components";
+  @import "tailwindcss/utilities";

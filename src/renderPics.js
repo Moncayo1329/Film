@@ -7,8 +7,8 @@ return (
     <div>
 
 <img src={props.img} alt="" width='200px' />
-<h6>{props.Title}</h6>
-<p style={{ color: '#161748' }}>{props.Dates}</p>
+<h6 className="bg-violet-500">{props.Title}</h6>
+<p className="mb-violet-500">{props.Dates}</p>
 
 
 </div>
