@@ -5,5 +5,11 @@
 
   :root {
     --grape: 114, 35, 204;
+    --text-color:rgb(87 83 78);
   }
   
+
+
+  [data-theme="dark"] {
+    --text-color: #e7e5e4; /* Color para modo oscuro */
+  }
