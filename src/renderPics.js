@@ -2,20 +2,22 @@ import React from "react";
 import { BsTags } from "react-icons/bs";
 import { CiCloudOn } from "react-icons/ci";
 import './styles.css';
+import { TbH5 } from "react-icons/tb";
 
 function Render(props) {
 
 return (
-    <article className='book'>
-   
-        <img src={props.img} alt="" className="img-fluid" width='200px' />
+    <div>
+   <div className="Pics">
+        <img src={props.img} alt="" className="img-fluid" width='230px' />
+
+        </div>
     
-<h6 className="text-[var(--text-color)]"><BsTags />{props.Title}</h6>
-<p className="text-[var(--text-color)]"><CiCloudOn />{props.Dates}</p>
+<h4 className="text-[var(--text-color)] flex items-center gap-2"><BsTags />{props.Title}</h4>
+<p className="text-[var(--text-color)]  flex items-center gap-2"><CiCloudOn />{props.Dates}</p>
 
 
-
-</article>
+</div>
 )
 
 

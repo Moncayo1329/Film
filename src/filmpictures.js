@@ -9,7 +9,7 @@ return (
 <div className="App">
       <header className="App-header"> 
         <h1 className="text-3xl font-bold underline">Mike film</h1>
-        <section className='Articulolist'> 
+        <section className="Pictures">
         {Filmphotos && Filmphotos.length > 0 ? (
           Filmphotos.map((photo, index) => (
            
@@ -23,7 +23,9 @@ return (
         ) : (
           <p>No photos available</p>   
         )}
-           </section>
+
+        </section>
+          
     </header>
   
     </div>

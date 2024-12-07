@@ -4,25 +4,37 @@
   
   
   }
-.texto{
-  text-aling:center;
-}
 
-.Articulolist {
-  width: 90vw;
-  max-width: 1170px;
-  margin: 5rem auto;
-  display: grid;
-  gap: 2rem;
-}
+  /// Fotos. 
 
-@media screen and (min-width: 768px) {
-  .Articulolist {
-    grid-template-columns: repeat(3, 1fr);
-    /* align-items: start; */
+  .texto{
+    text-aling:center;
   }
-}
+  
+  .Pictures {
+    max-width: 1170px;
+    margin: 5rem auto;
+    display: grid;
+    gap: 2rem;
+    margin-left:60px;
+    margin-top:200px;
+  }
 
+  .Pics img{
+    border-radius:10px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .Pictures {
+      grid-template-columns: repeat(3, 1fr);
+      margin-left:250px;
+      margin-top:260px;
+    }
+  }
+  
+  
+
+  
 
 
 
