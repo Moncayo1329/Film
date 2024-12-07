@@ -34,7 +34,84 @@ Dates: '2024-12-05',
         
         
         
-        },
+        }, 
+
+
+        {
+
+            id:'3',
+            img: require('../data/photos/Friends.jpg'),
+            description:"me and my best friend",
+            dates:" younger etiqueta"
+            
+            
+            
+            
+            },
+
+
+
+
+            {
+
+                id:'3',
+                img: require('../data/photos/Friends.jpg'),
+                description:"me and my best friend",
+                dates:" younger etiqueta"
+                
+                
+                
+                
+                },
+
+
+
+
+
+                {
+
+                    id:'3',
+                    img: require('../data/photos/Friends.jpg'),
+                    description:"me and my best friend",
+                    dates:" younger etiqueta"
+                    
+                    
+                    
+                    
+                    },
+
+
+
+
+
+
+
+
+                    {
+
+                        id:'3',
+                        img: require('../data/photos/Friends.jpg'),
+                        description:"me and my best friend",
+                        dates:" younger etiqueta"
+                        
+                        
+                        
+                        
+                        },
+
+
+
+                        {
+
+                            id:'3',
+                            img: require('../data/photos/Friends.jpg'),
+                            description:"me and my best friend",
+                            dates:" younger etiqueta"
+                            
+                            
+                            
+                            
+                            },
     
 
 

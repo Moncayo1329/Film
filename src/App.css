@@ -1,3 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+  
+  }
+.texto{
+  text-aling:center;
+}
+
+.Articulolist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .Articulolist {
+    grid-template-columns: repeat(3, 1fr);
+    /* align-items: start; */
+  }
+}
+
+
+
+
 
 :root {
     --background: #FFFFFF;

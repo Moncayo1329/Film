@@ -5,6 +5,7 @@ import DarkModeToggle from './darkmode'
 function App() {
   return (
     <div className="App">
+ 
       <Pics/> 
       <DarkModeToggle />
     </div>
