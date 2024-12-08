@@ -1,73 +1,57 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  
-  
-  }
-body{
+}
+
+body {
   font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 
 
+.Pictures {
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+  margin-left: 60px;
+  margin-top: 100px;
+}
 
-  .texto{
-    text-aling:center;
-  }
-  
+.Pics img {
+  border-radius: 10px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
   .Pictures {
-    max-width: 1170px;
-    margin: 5rem auto;
-    display: grid;
-    gap: 2rem;
-    margin-left:60px;
-    margin-top:100px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 450px;
+    margin-top: 260px;
   }
+}
 
-  .Pics img{
-    border-radius:10px;
+@media screen and (min-width: 475px) and (max-width: 780px) {
+  .Pictures {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 100px;
+    margin-top: 200px;
   }
-  
-    
-  @media screen and (min-width: 768px) {
-    .Pictures {
-      grid-template-columns: repeat(3, 1fr);
-      margin-left:450px;
-      margin-top:260px;
-    }
-  }
-  
-  @media screen and (min-width: 475px) and (max-width: 780px) {
-    .Pictures {
-      grid-template-columns: repeat(2, 1fr); /* Ajustar a 2 columnas */
-      margin-left: 100px; /* Reducir margen lateral */
-      margin-top: 200px; /* Ajustar margen superior */
-    }
-  }
+}
 
-  @media screen and (min-width: 375px) and (max-width: 425px) {
-    .Pictures {
-      grid-template-columns: repeat(1, 1fr); /* Ajustar a 2 columnas */
-      margin-left: 80px; /* Reducir margen lateral */
-      margin-top: 120px; /* Ajustar margen superior */
-    }
+@media screen and (max-width: 425px) {
+  .Pictures {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 80px;
+    margin-top: 120px;
   }
+}
 
-  @media screen and (min-width: 425px) and (max-width: 763px) {
-    .Pictures {
-      grid-template-columns: repeat(1, 1fr); /* Ajustar a 2 columnas */
-      margin-left: 100px; /* Reducir margen lateral */
-      margin-top: 120px; /* Ajustar margen superior */
-    }
-  }
-  
-  /* Ajuste para portátiles (entre 1024px y 1280px) */
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .Pictures {
-    grid-template-columns: repeat(3, 1fr); /* Cambia a 2 columnas */
-    margin-left: 90px; /* Ajusta el margen izquierdo */
-    margin-top: 200px; /* Ajusta el margen superior */
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 90px;
+    margin-top: 200px;
   }
 }
 
@@ -82,33 +66,30 @@ body{
 @media screen and (min-width: 1440px) {
   .Pictures {
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 200px; /* Centramos automáticamente */
-    margin-right: auto; /* Centramos automáticamente */
-    margin-top: 190px; /* Ajusta solo la separación superior */
-    max-width: 1200px; /* Limita el ancho total del contenedor */
+    margin-left: 200px;
+    margin-right: auto;
+    margin-top: 190px;
+    max-width: 1200px;
   }
 }
 
-
-  
-
-
-
-
+/* CSS Variables */
 :root {
-    --background: #FFFFFF;
-    --text-color: rgb(87 83 78);
-  }
-  
-  [data-theme="dark"] {
-    --background: #000000;
-    --text-color: #FFFFFF;
-  }
-/* Aplicar los estilos usando las variables CSS */
+  --background: #FFFFFF;
+  --text-color: rgb(87, 83, 78);
+  --titulo-color: rgb(87, 83, 78); /* Add this variable if used */
+}
+
+[data-theme="dark"] {
+  --background: #000000;
+  --text-color: #FFFFFF;
+}
+
+/* Apply variables */
 body {
-    background-color: var(--background);
-    transition: background-color 0.3s ease-in-out;
-  }
+  background-color: var(--background);
+  transition: background-color 0.3s ease-in-out;
+}
 
 .App {
   background-color: var(--background);
@@ -116,11 +97,11 @@ body {
 }
 
 .text-[var(--text-color)] {
-    color: var(--text-color);
-    transition: color 0.3s ease-in-out;
-  }
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
 
-/* Estilos adicionales para el toggle */
+/* Dark mode toggle styles */
 .dark-mode-toggle {
   position: absolute;
   top: 10px;
@@ -148,7 +129,6 @@ body {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -160,7 +140,6 @@ body {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -173,8 +152,6 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
@@ -186,32 +163,24 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
 
-
-
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-/* Base Styles for All Devices */
-
-/* Cursor */
-
-.cursor  {
+/* Cursor Animation */
+.cursor {
   position: relative;
-  width: 0.625em; /* 10px if 1em = 16px */
+  width: 0.625em; /* 10px */
   margin: 0 auto;
-  border-right: 0.125em solid rgba(255, 255, 255, 0.75); /* 2px */
+  border-right: 0.125em solid rgba(255, 255, 255, 0.75);
   font-size: 1.875em; /* 30px */
-  margin-top: 150px; /* 60px */
+  margin-top: 150px;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
   font-family: "Jaro", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
 }
 
-/* Animation */
 .typewriter-animation {
   width: 0.3125em;
   animation: 
@@ -236,46 +205,34 @@ input:checked + .slider:before {
 }
 
 /* Responsive Styles */
-
-/* Mobile Devices (Portrait and Landscape) */
 @media (max-width: 600px) {
   .cursor {
     font-size: 1.5em; /* 24px */
-    margin-bottom: 10px; /* 40px */
-    border-right: 0.1em solid rgba(255, 255, 255, 0.75); /* ~1.6px */
+    margin-bottom: 10px;
+    border-right: 0.1em solid rgba(255, 255, 255, 0.75);
   }
-
-  
 }
 
-/* Tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
   .cursor {
     font-size: 2em; /* 32px */
-    margin-top: 3em; /* 48px */
-    border-right: 0.125em solid rgba(255, 255, 255, 0.75); /* 2px */
+    margin-top: 3em;
+    border-right: 0.125em solid rgba(255, 255, 255, 0.75);
   }
 
   .typewriter-animation {
-    width: 0.3em; /* 4.8px */
+    width: 0.3em;
   }
 }
 
-/* Desktops and Larger Screens */
 @media (min-width: 1025px) {
   .cursor {
     font-size: 2.5em; /* 40px */
-    margin-top: 4em; /* 64px */
-    border-right: 0.15em solid rgba(255, 255, 255, 0.75); /* 2.4px */
+    margin-top: 4em;
+    border-right: 0.15em solid rgba(255, 255, 255, 0.75);
   }
 
   .typewriter-animation {
-    width: 0.35em; /* 5.6px */
+    width: 0.35em;
   }
-}
-
-
-/* Archivo CSS */
-.cursor {
-  color: var(--titulo-color); /* Aplica el color dinámico con la nueva variable */
 }

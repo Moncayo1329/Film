@@ -13,7 +13,7 @@
 
   [data-theme="dark"] {
     --text-color: #e7e5e4; /* Color para modo oscuro */
-    --titulo-color:#ffffff
+    --titulo-color:#ffffff;
   }
 
 
