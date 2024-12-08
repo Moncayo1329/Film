@@ -6,12 +6,14 @@
   :root {
     --grape: 114, 35, 204;
     --text-color:rgb(87 83 78);
+    --titulo-color: #000000
   }
   
 
 
   [data-theme="dark"] {
     --text-color: #e7e5e4; /* Color para modo oscuro */
+    --titulo-color:#ffffff
   }
 
 

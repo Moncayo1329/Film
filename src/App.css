@@ -4,6 +4,11 @@
   
   
   }
+body{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
   /// Fotos. 
 
@@ -17,22 +22,73 @@
     display: grid;
     gap: 2rem;
     margin-left:60px;
-    margin-top:200px;
+    margin-top:100px;
   }
 
   .Pics img{
     border-radius:10px;
   }
   
+    
   @media screen and (min-width: 768px) {
     .Pictures {
       grid-template-columns: repeat(3, 1fr);
-      margin-left:250px;
+      margin-left:450px;
       margin-top:260px;
     }
   }
   
+  @media screen and (min-width: 475px) and (max-width: 780px) {
+    .Pictures {
+      grid-template-columns: repeat(2, 1fr); /* Ajustar a 2 columnas */
+      margin-left: 100px; /* Reducir margen lateral */
+      margin-top: 200px; /* Ajustar margen superior */
+    }
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 425px) {
+    .Pictures {
+      grid-template-columns: repeat(1, 1fr); /* Ajustar a 2 columnas */
+      margin-left: 80px; /* Reducir margen lateral */
+      margin-top: 120px; /* Ajustar margen superior */
+    }
+  }
+
+  @media screen and (min-width: 425px) and (max-width: 763px) {
+    .Pictures {
+      grid-template-columns: repeat(1, 1fr); /* Ajustar a 2 columnas */
+      margin-left: 100px; /* Reducir margen lateral */
+      margin-top: 120px; /* Ajustar margen superior */
+    }
+  }
   
+  /* Ajuste para portátiles (entre 1024px y 1280px) */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .Pictures {
+    grid-template-columns: repeat(3, 1fr); /* Cambia a 2 columnas */
+    margin-left: 90px; /* Ajusta el margen izquierdo */
+    margin-top: 200px; /* Ajusta el margen superior */
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .Pictures {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 460px;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Pictures {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 200px; /* Centramos automáticamente */
+    margin-right: auto; /* Centramos automáticamente */
+    margin-top: 190px; /* Ajusta solo la separación superior */
+    max-width: 1200px; /* Limita el ancho total del contenedor */
+  }
+}
+
 
   
 
@@ -128,4 +184,98 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+/* Base Styles for All Devices */
+
+/* Cursor */
+
+.cursor  {
+  position: relative;
+  width: 0.625em; /* 10px if 1em = 16px */
+  margin: 0 auto;
+  border-right: 0.125em solid rgba(255, 255, 255, 0.75); /* 2px */
+  font-size: 1.875em; /* 30px */
+  margin-top: 150px; /* 60px */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  font-family: "Jaro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Animation */
+.typewriter-animation {
+  width: 0.3125em;
+  animation: 
+    typewriter 5s steps(50) infinite,
+    blinkingCursor 500ms steps(50) infinite normal,
+    hideText 0s 5s infinite;
+}
+
+@keyframes typewriter {
+  0%, 100% { width: 0; }
+  50%, 90% { width: 100%; }
+}
+
+@keyframes blinkingCursor {
+  from { border-right-color: rgba(255, 255, 255, 0.75); }
+  to { border-right-color: transparent; }
+}
+
+@keyframes hideText {
+  0%, 99.9% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Responsive Styles */
+
+/* Mobile Devices (Portrait and Landscape) */
+@media (max-width: 600px) {
+  .cursor {
+    font-size: 1.5em; /* 24px */
+    margin-bottom: 10px; /* 40px */
+    border-right: 0.1em solid rgba(255, 255, 255, 0.75); /* ~1.6px */
+  }
+
+  
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .cursor {
+    font-size: 2em; /* 32px */
+    margin-top: 3em; /* 48px */
+    border-right: 0.125em solid rgba(255, 255, 255, 0.75); /* 2px */
+  }
+
+  .typewriter-animation {
+    width: 0.3em; /* 4.8px */
+  }
+}
+
+/* Desktops and Larger Screens */
+@media (min-width: 1025px) {
+  .cursor {
+    font-size: 2.5em; /* 40px */
+    margin-top: 4em; /* 64px */
+    border-right: 0.15em solid rgba(255, 255, 255, 0.75); /* 2.4px */
+  }
+
+  .typewriter-animation {
+    width: 0.35em; /* 5.6px */
+  }
+}
+
+
+/* Archivo CSS */
+.cursor {
+  color: var(--titulo-color); /* Aplica el color dinámico con la nueva variable */
 }

@@ -8,7 +8,7 @@ function Pics() {
 return (
 <div className="App">
       <header className="App-header"> 
-        <h1 className="text-3xl font-bold underline">Mike film</h1>
+      <h1 className="text-[var(--titulo-color)] cursor typewriter-animation">Hi there, welcome to Mike Film!</h1>
         <section className="Pictures">
         {Filmphotos && Filmphotos.length > 0 ? (
           Filmphotos.map((photo, index) => (
