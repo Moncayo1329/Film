@@ -1,238 +1,240 @@
+/* Reset CSS */
 * {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Roboto Condensed", sans-serif;
-  font-style: normal;
-}
-
-
-.Pictures {
-  max-width: 1170px;
-  margin: 5rem auto;
-  display: grid;
-  gap: 2rem;
-  margin-left: 60px;
-  margin-top: 100px;
-}
-
-.Pics img {
-  border-radius: 10px;
-}
-
-/* Media Queries */
-@media screen and (min-width: 768px) {
-  .Pictures {
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 450px;
-    margin-top: 260px;
+    margin: 0;
+    padding: 0;
   }
-}
-
-@media screen and (min-width: 475px) and (max-width: 780px) {
-  .Pictures {
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 100px;
-    margin-top: 200px;
+  
+  body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
   }
-}
-
-@media screen and (max-width: 425px) {
+  
+  /* Pictures Grid */
   .Pictures {
-    grid-template-columns: repeat(1, 1fr);
-    margin-left: 80px;
-    margin-top: 120px;
+    max-width: 1170px;
+    margin: 5rem auto;
+    display: grid;
+    gap: 2rem;
+    margin-left: 60px;
+    margin-top: 100px;
   }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-  .Pictures {
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 90px;
-    margin-top: 200px;
+  
+  .Pics img {
+    border-radius: 10px;
   }
-}
-
-@media screen and (min-width: 1281px) {
-  .Pictures {
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 460px;
-    margin-top: 150px;
+  
+  /* Media Queries for different screen sizes */
+  @media screen and (min-width: 768px) {
+    .Pictures {
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 450px;
+      margin-top: 260px;
+    }
   }
-}
-
-@media screen and (min-width: 1440px) {
-  .Pictures {
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 200px;
-    margin-right: auto;
-    margin-top: 190px;
-    max-width: 1200px;
+  
+  @media screen and (min-width: 475px) and (max-width: 780px) {
+    .Pictures {
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 100px;
+      margin-top: 200px;
+    }
   }
-}
-
-/* CSS Variables */
-:root {
-  --background: #FFFFFF;
-  --text-color: rgb(87, 83, 78);
-  --titulo-color: rgb(87, 83, 78); /* Add this variable if used */
-}
-
-[data-theme="dark"] {
-  --background: #000000;
-  --text-color: #FFFFFF;
-}
-
-/* Apply variables */
-body {
-  background-color: var(--background);
-  transition: background-color 0.3s ease-in-out;
-}
-
-.App {
-  background-color: var(--background);
-  transition: background-color 0.3s ease-in-out;
-}
-
-.text-[var(--text-color)] {
-  color: var(--text-color);
-  transition: color 0.3s ease-in-out;
-}
-
-/* Dark mode toggle styles */
-.dark-mode-toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #030f18;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #030f18;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
-
-/* Cursor Animation */
-.cursor {
-  position: relative;
-  width: 0.625em; /* 10px */
-  margin: 0 auto;
-  border-right: 0.125em solid rgba(255, 255, 255, 0.75);
-  font-size: 1.875em; /* 30px */
-  margin-top: 150px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
-  font-family: "Jaro", serif;
-  font-weight: 400;
-}
-
-.typewriter-animation {
-  width: 0.3125em;
-  animation: 
-    typewriter 5s steps(50) infinite,
-    blinkingCursor 500ms steps(50) infinite normal,
-    hideText 0s 5s infinite;
-}
-
-@keyframes typewriter {
-  0%, 100% { width: 0; }
-  50%, 90% { width: 100%; }
-}
-
-@keyframes blinkingCursor {
-  from { border-right-color: rgba(255, 255, 255, 0.75); }
-  to { border-right-color: transparent; }
-}
-
-@keyframes hideText {
-  0%, 99.9% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-/* Responsive Styles */
-@media (max-width: 600px) {
+  
+  @media screen and (max-width: 425px) {
+    .Pictures {
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 80px;
+      margin-top: 120px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .Pictures {
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 90px;
+      margin-top: 200px;
+    }
+  }
+  
+  @media screen and (min-width: 1281px) {
+    .Pictures {
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 460px;
+      margin-top: 150px;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .Pictures {
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 200px;
+      margin-right: auto;
+      margin-top: 190px;
+      max-width: 1200px;
+    }
+  }
+  
+  /* Dark Mode and Light Mode with CSS Variables */
+  :root {
+    --background: #ffffff;
+    --text-color: rgb(87, 83, 78);
+    --titulo-color: rgb(87, 83, 78); /* Text color for titles */
+  }
+  
+  [data-theme="dark"] {
+    --background: #000000;
+    --text-color: #ffffff;
+    --titulo-color: #ffffff;
+  }
+  
+  /* Apply background and text color using variables */
+  body {
+    background-color: var(--background);
+    color: var(--text-color);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .App {
+    background-color: var(--background);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .text-custom {
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Dark Mode Toggle Styles */
+  .dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #030f18;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #030f18;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Cursor Animation */
   .cursor {
-    font-size: 1.5em; /* 24px */
-    margin-bottom: 10px;
-    border-right: 0.1em solid rgba(255, 255, 255, 0.75);
-  }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  .cursor {
-    font-size: 2em; /* 32px */
-    margin-top: 3em;
+    position: relative;
+    width: 0.625em; /* 10px */
+    margin: 0 auto;
     border-right: 0.125em solid rgba(255, 255, 255, 0.75);
+    font-size: 1.875em; /* 30px */
+    margin-top: 150px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-family: "Jaro", serif;
+    font-weight: 400;
   }
-
+  
   .typewriter-animation {
-    width: 0.3em;
+    width: 0.3125em;
+    animation:
+      typewriter 5s steps(50) infinite,
+      blinkingCursor 500ms steps(50) infinite normal,
+      hideText 0s 5s infinite;
   }
-}
-
-@media (min-width: 1025px) {
-  .cursor {
-    font-size: 2.5em; /* 40px */
-    margin-top: 4em;
-    border-right: 0.15em solid rgba(255, 255, 255, 0.75);
+  
+  @keyframes typewriter {
+    0%, 100% { width: 0; }
+    50%, 90% { width: 100%; }
   }
-
-  .typewriter-animation {
-    width: 0.35em;
+  
+  @keyframes blinkingCursor {
+    from { border-right-color: rgba(255, 255, 255, 0.75); }
+    to { border-right-color: transparent; }
   }
-}
+  
+  @keyframes hideText {
+    0%, 99.9% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  /* Responsive Styles for Cursor */
+  @media (max-width: 600px) {
+    .cursor {
+      font-size: 1.5em; /* 24px */
+      margin-bottom: 10px;
+      border-right: 0.1em solid rgba(255, 255, 255, 0.75);
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .cursor {
+      font-size: 2em; /* 32px */
+      margin-top: 3em;
+      border-right: 0.125em solid rgba(255, 255, 255, 0.75);
+    }
+  
+    .typewriter-animation {
+      width: 0.3em;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .cursor {
+      font-size: 2.5em; /* 40px */
+      margin-top: 4em;
+      border-right: 0.15em solid rgba(255, 255, 255, 0.75);
+    }
+  
+    .typewriter-animation {
+      width: 0.35em;
+    }
+  }
+  

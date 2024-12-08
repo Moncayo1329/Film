@@ -1,8 +1,7 @@
 import React from "react";
 import { BsTags } from "react-icons/bs";
 import { CiCloudOn } from "react-icons/ci";
-import './styles.css';
-import { TbH5 } from "react-icons/tb";
+
 
 function Render(props) {
 

@@ -13,7 +13,7 @@ module.exports = {
   theme: {
     extend: {
    colors:{
-  grape:"rgba(var(--grape) / <alpha-value>)"
+  grape:"rgba(var(--grape),1)"
 
    }
     },
