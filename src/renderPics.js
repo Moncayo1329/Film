@@ -8,7 +8,7 @@ function Render(props) {
 return (
     <div>
    <div className="Pics">
-        <img src={props.img} alt="" className="img-fluid" width='230px' />
+        <img src={props.img} loading="lazy"  alt="" className="img-fluid" width='230px' />
 
         </div>
     
