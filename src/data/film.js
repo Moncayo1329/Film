@@ -133,7 +133,7 @@ Dates: '30-9-24',
 
                                     id:'10',
                                     Title:"me again",
-                                    img: require('../data/photos/meagain.jpg'),
+                                    img: require('../data/photos/115.jpg'),
                                     Dates:"4-10-24"
                                         
                                     
@@ -164,7 +164,7 @@ Dates: '30-9-24',
 
                                             id:'12',
                                             Title:"Camila and me",
-                                            img: require('../data/photos/frens.jpg'),
+                                            img: require('./photos/116.jpg'),
                                             Dates:"4-10-24"
                                                 
                                             
