@@ -7,11 +7,14 @@ function App() {
   return (
     <div className="App">
 <Helmet>
-        <meta property="og:image" content="https://filmbymike.vercel.app/logo.png" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="600" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:description" content="Taking photos with my film camera" />
+        <meta property="og:title" content="film by Mike"></meta>
+        <meta property="og:description" content="Taking film photos with my camera"></meta>
+        <meta property="og:image" content="https://filmbymike.vercel.app/logo.png" />
+       <meta property="og:type" content="website"></meta>
+       <meta property="og:url" content="https://filmbymike.vercel.app"></meta>
       </Helmet>
 
 
